@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="removerContatos" layoutX="109.0" layoutY="362.0" prefHeight="71.0" prefWidth="436.0" />
+      <Button fx:id="btnfecharTela" layoutX="236.0" layoutY="517.0" mnemonicParsing="false" onAction="#botaofecharTela" prefHeight="48.0" prefWidth="182.0" text="Fechar" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <HBox fx:id="labelAgenda" prefHeight="112.0" prefWidth="671.0" style="-fx-background-color: blue;">
+         <children>
+            <Label prefHeight="20.0" prefWidth="234.0" text="Escolha a opção desejada para continuar" textFill="#fffafa" translateX="212.0" translateY="82.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" text="Agenda De Contatos" textAlignment="JUSTIFY" textFill="WHITE" translateX="-42.0" translateY="47.0">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Button fx:id="btnAdicionar" layoutX="109.0" layoutY="146.0" mnemonicParsing="false" onAction="#botaoAdicionar" prefHeight="71.0" prefWidth="436.0" text="Adicionar Contatos">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnListar" layoutX="109.0" layoutY="234.0" mnemonicParsing="false" onAction="#botaoListar" prefHeight="71.0" prefWidth="436.0" text="Listar Contatos">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBuscar" layoutX="109.0" layoutY="319.0" mnemonicParsing="false" onAction="#botaoBuscar" prefHeight="71.0" prefWidth="436.0" text="Buscar Contato por Nome" translateY="1.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRemover" layoutX="109.0" layoutY="415.0" mnemonicParsing="false" onAction="#botaoRemover" prefHeight="71.0" prefWidth="436.0" text="Remover Contato" translateY="-8.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="225.0" layoutY="195.0" prefHeight="17.0" prefWidth="204.0" text="Cadastre um novo contato na agenda" textAlignment="CENTER" />
+      <Label layoutX="233.0" layoutY="281.0" text="Visualize todos os contatos cadatrados" />
+      <Label layoutX="236.0" layoutY="364.0" prefHeight="27.0" prefWidth="182.0" text="Encontre um contato pelo nome" translateX="4.0" />
+      <Label layoutX="252.0" layoutY="451.0" prefHeight="27.0" prefWidth="150.0" text="Exclua contatos da agenda" />
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="124.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/adicionar-usuario.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="124.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/verificacao-de-lista.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="124.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/local-de-pesquisa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="124.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/lixeira-de-reciclagem.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="124.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/lista.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="124.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/pesquisa.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="125.0" layoutY="423.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/remover.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="32.0" layoutX="252.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@imagens/fechar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
