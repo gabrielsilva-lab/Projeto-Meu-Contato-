@@ -1,0 +1,17 @@
+# Arquivos compilados pelo Maven
+target/
+
+# Arquivos compilados Java
+*.class
+
+# Configurações privadas do NetBeans
+nbproject/private/
+
+# Configurações locais de IDEs
+.idea/
+.vscode/
+
+# Arquivos temporários
+*.log
+.DS_Store
+Thumbs.db
