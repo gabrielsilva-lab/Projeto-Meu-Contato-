@@ -17,16 +17,16 @@ public class TelaInicialController {
         stage.close();
         //System.exit(0);
     }
+    
     @FXML
     private void botaoAdicionar(ActionEvent event) {
         abrirTela(event,"/app/telaAdicionarContato.fxml","Adicionar Contato");
         System.out.println("Adicionar Contato");
     }
     
-    
     @FXML
     private void botaoListar(ActionEvent event) {
-        abrirTela(event,"/app/listarContato/telaListarContato.fxml","Listar Contato");
+        abrirTela(event,"/app/telaListarContato.fxml","Listar Contato");
         System.out.println("Listar Contato");
     }
     
@@ -43,10 +43,10 @@ public class TelaInicialController {
     }
     
     
-    private void abrirTela(ActionEvent event,String caminho, String titulo) {
+    private void abrirTela(ActionEvent event, String caminho, String titulo) {
        
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("/app/telaAdicionarContato.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource(caminho));
             Scene scene = new Scene(root);
             Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
